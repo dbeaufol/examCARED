@@ -11,31 +11,31 @@
   {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
 
   <div class="form-group">
-    {!! Form::label('Your Name') !!}
+    {!! Form::label('Ton Nom') !!}
     {!! Form::text('name', null,
         array('required',
               'class'=>'form-control',
-              'placeholder'=>'Your name')) !!}
+              'placeholder'=>'Ton nom')) !!}
   </div>
 
   <div class="form-group">
-    {!! Form::label('Your E-mail Address') !!}
+    {!! Form::label('Ton Adresse Mail') !!}
     {!! Form::text('email', null,
         array('required',
               'class'=>'form-control',
-              'placeholder'=>'Your e-mail address')) !!}
+              'placeholder'=>'Ton adresse mail')) !!}
   </div>
 
   <div class="form-group">
-    {!! Form::label('Your Message') !!}
+    {!! Form::label('Ton Message') !!}
     {!! Form::textarea('message', null,
         array('required',
               'class'=>'form-control',
-              'placeholder'=>'Your message')) !!}
+              'placeholder'=>'Ton message')) !!}
   </div>
 
   <div class="form-group">
-    {!! Form::submit('Contact Us!',
+    {!! Form::submit('Contacter nous!',
       array('class'=>'btn btn-primary')) !!}
   </div>
 {!! Form::close() !!}

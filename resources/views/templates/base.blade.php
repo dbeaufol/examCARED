@@ -3,11 +3,22 @@
   <head>
     <meta charset="utf-8">
     <link href="/css/monStyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>@yield('title')</title>
+    <script>
+      $(document).ready(function(){
+          $("#btn1").click(function(){
+              $("#box").animate({width: "400px"});
+          });
+          $("#btn2").click(function(){
+              $("#box").animate({width: "100px"});
+          });
+      });
+    </script>
   </head>
   <body>
     <header>
-        <h2>Application</h2>
+        <h2>Evaluation CARRED</h2>
         @if(Auth::check())
           <span>{{ Auth::user()->name}}</span>
         @else
