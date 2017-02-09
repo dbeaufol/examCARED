@@ -1,0 +1,75 @@
+header{
+  display: flex;
+  background-color: rgb(240,240,240);
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+  box-shadow: -2px 7px 5px -5px rgba(0,0,0,0.75);
+}
+.maList{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  flex-basis: 40%;
+  padding-right: 10px;
+}
+.maList li{
+  width: 100%;
+  font-size: 20px;
+}
+.maList a{
+  text-decoration: none;
+}
+h2{
+  flex-basis: 60%;
+  font-family: cursive;
+  text-shadow: 2px 2px 2px;
+  color: rgb(150,0,0);
+  margin: 0;
+  padding-left: 10px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /*background-image: url("/img/images.png");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-image:
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(240,240,240);
+  border: 1px solid grey;
+  box-shadow: -2px -7px 5px -5px rgba(0,0,0,0.75);
+  margin: 0;
+}
+.monP{
+  padding-left: 10px;
+}
+.monLien{
+  padding-right: 10px;
+}
+table#product-table{
+  text-align: center;
+  border: 2px solid black;
+}
+table#product-table td{
+  border: 1px solid black;
+}
+table#product-table th{
+  border: 2px solid black;
+}
