@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Product;
@@ -15,11 +14,11 @@ class MagasinController extends Controller
       $products = Product::all();
       if($products === NULL)
       {
-        $request->session()->flash('status','No products returned');
+        $request->session()->flash('status','Aucun produit');
       }
       else
       {
-        $request->session()->flash('status','All is good');
+        $request->session()->flash('status','All is Good');
       }
       return view('magasin', ['products' => $products]);
     }

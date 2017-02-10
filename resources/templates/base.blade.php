@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Template de base-->
 <html>
   <head>
     <meta charset="utf-8">

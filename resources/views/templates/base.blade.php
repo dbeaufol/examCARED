@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Template de base-->
 <html>
   <head>
     <meta charset="utf-8">
@@ -17,7 +18,7 @@
     </script>
   </head>
   <body>
-    <header>
+    <header id="headerPrincipal">
         <h2>Evaluation CARRED</h2>
         @if(Auth::check())
           <span>{{ Auth::user()->name}}</span>
@@ -40,7 +41,7 @@
     <div class="container">
       <div>@yield('content')</div>
     </div>
-    <footer>
+    <footer id="footerPrincipale">
       <p class="monP">Copyright : ITAkademy 2017</p>
       <a class="monLien" href="/contact">Nous contacter</a>
     </footer>

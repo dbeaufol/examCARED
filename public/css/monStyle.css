@@ -1,3 +1,14 @@
+#h1{
+  font-family: "Times New Roman", Times, serif;
+}
+th {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+a{
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
 header{
   display: flex;
   background-color: rgb(240,240,240);
@@ -85,6 +96,17 @@ table#product-table td{
 table#product-table th{
   border: 2px solid black;
 }
+table#message-table{
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+}
+table#message-table td{
+  border: 1px solid black;
+}
+table#message-table th{
+  border: 2px solid black;
+}
 .divB{
   background-color: white;
   border: 2px solid black;
@@ -142,9 +164,7 @@ table#product-table th{
     display: flex;
     flex-direction: column;
     margin: 0;
-    /*background-image: url("/img/index.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    background-color: rgb(245,245,245);
   }
   .container{
     text-align: center;

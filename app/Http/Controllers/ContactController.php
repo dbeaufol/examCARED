@@ -1,5 +1,5 @@
 <?php
-
+//Ajoute un message dans la base de donnée
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;

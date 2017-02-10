@@ -1,7 +1,8 @@
 @extends('templates.base')
 @section('title', 'Magasin')
 @section('content')
-    <h1>Magasin de musique</h1>
+<!--Magasin Tablau de produits-->
+    <h1 id="h1">Magasin de musique</h1>
     @if($products instanceof Illuminate\Database\Eloquent\Collection)
         <table id="product-table">
           <tr>

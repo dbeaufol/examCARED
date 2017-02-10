@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//Lien url et lien vers mes controllers
 Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/','AccueilController@index');
 Route::get('contact','ContactController@index');
