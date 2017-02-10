@@ -9,7 +9,7 @@
 
 
 Evaluation CARED:
-
+La base de donnée est: dum.sql
 utilisation de formulaire
 utilisateurs de l'apllication:
 name:admin email:admin@admin.admin password:admin0000
