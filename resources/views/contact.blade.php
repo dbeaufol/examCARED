@@ -1,42 +1,27 @@
 @extends('templates.base')
 @section('title', 'Contact')
 @section('content')
-  <h1>Page contact</h1>
-  <ul>
-    @foreach($errors->all() as $error)
-        <li>{{ $error }}</li>
-    @endforeach
-  </ul>
+  <h1 id=h1>Page contact</h1>
 
-  {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
+  {!! Form::open(['url'=> 'contact']) !!}
 
   <div class="form-group">
     {!! Form::label('Ton Nom') !!}
-    {!! Form::text('name', null,
-        array('required',
-              'class'=>'form-control',
-              'placeholder'=>'Ton nom')) !!}
+    {!! Form::text('name') !!}
   </div>
 
   <div class="form-group">
     {!! Form::label('Ton Adresse Mail') !!}
-    {!! Form::text('email', null,
-        array('required',
-              'class'=>'form-control',
-              'placeholder'=>'Ton adresse mail')) !!}
+    {!! Form::text('email') !!}
   </div>
 
   <div class="form-group">
     {!! Form::label('Ton Message') !!}
-    {!! Form::textarea('message', null,
-        array('required',
-              'class'=>'form-control',
-              'placeholder'=>'Ton message')) !!}
+    {!! Form::textarea('message') !!}
   </div>
 
-  <div class="form-group">
-    {!! Form::submit('Contacter nous!',
-      array('class'=>'btn btn-primary')) !!}
+  <div class="form-group" id="monText">
+    {!! Form::submit('Contacter nous!')!!}
   </div>
 {!! Form::close() !!}
 @endsection

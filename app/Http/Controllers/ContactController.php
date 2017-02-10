@@ -3,22 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Message;
 
 class ContactController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     public function index()
     {
       return view('contact');
     }
-    public function store(Request $request)
+    public function insertOne(Request $request)
     {
-
-      return \Redirect::route('contact')
-        ->with('message', 'Thanks for contacting us!');
+      $message = new Message;
+      $message->name = $request->name;
+      $message->email = $request->email;
+      $message->message = $request->message;
+      $message->save();
+      return redirect('/contact');
 
     }
 }

@@ -17,6 +17,13 @@
           <li><a href="/">Accueil</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/magasin">Magasin</a></li>
+          @if (Auth::check())
+            <li><a href="/message">Messages</a></li>
+            <li><a href="/logout">Logout</a></li>
+          @else
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+          @endif
         </ul>
     </header>
     <div class="container">

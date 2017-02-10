@@ -29,6 +29,7 @@
           <li><a href="/contact">Contact</a></li>
           <li><a href="/magasin">Magasin</a></li>
           @if (Auth::check())
+            <li><a href="/message">Messages</a></li>
             <li><a href="/logout">Logout</a></li>
           @else
             <li><a href="/login">Login</a></li>

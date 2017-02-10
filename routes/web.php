@@ -18,7 +18,8 @@ Route::get('/', function () {
 Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/','AccueilController@index');
 Route::get('contact','ContactController@index');
-Route::post('contact',['as' => 'contact_store', 'uses' => 'ContactController@store']);
+Route::post('/contact','ContactController@insertOne');
+Route::get('message','MessageController@index');
 Route::get('magasin','MagasinController@index');
 
 Auth::routes();
